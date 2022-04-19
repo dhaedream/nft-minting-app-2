@@ -21,6 +21,9 @@ contract RoboPunkNFT is ERC721, Ownable {
         maxPerWallet = 3;
     }
     
+    function setIsPuublicMintEnabled(bool isPublicMintEnabled_) external onlyOwner {
+        isPublicMintEnabled = isPublicMintEnabled_;
+    }
 
 
 }
